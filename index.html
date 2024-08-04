@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style> 
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 50px;
+    }   
+    h3 {
+        padding: 100px 0px 10px;
+    }
+    .bgimg{
+    display: grid;
+    background-image: url(https://wallpapersmug.com/large/bd1964/road-highway-nature-tree-aerial-view.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    padding: 100px;
+    }
+    .card-img-top {
+        height: 15rem;
+    }
+
+    .profile-img {
+    height: 200px;
+    border-radius: 50%;
+    }
+    .atitle{
+        padding-top: 50px;
+    }
+    .album{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-header {
+        background-color:cadetblue;
+    }
+    .links {
+      width: 200px;
+    }
+            /* Light theme styles */
+            body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark theme styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      bottom: 0px;
+      margin-bottom: 0px;
+      
+    }
+  </style>
+</head>
+<body>
+
+  
+    <section class="header">
+<div class="">
+
+<div class="bgimg">
+    <div class="col-12 container text-center mt-5 pt-5">.
+        <img src="image/profile.jpg" class="profile-img">
+        <br><br>
+        <h1>Hello, I'm Rodney</h1>
+        <br>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col"><a href="https://www.facebook.com/rodney.daza"><button type="button" class="btn btn-outline-light links"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>  Facebook</button></a></div>
+            <div class="col"><a href="https://www.linkedin.com/in/rodneydaza/"><button type="button" class="btn btn-outline-light links"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg>  LinkedIn</button></a></div>
+            <div class="col"><a href="mailto:rodneydaza19@gmail.com"><button type="button" class="btn btn-outline-light links"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+            </svg>  Email</button></a></div>
+          </div>
+        </div>
+    </div>
+    <div class="container text-center col-lg-12">
+      
+      
+        <h3>Here's most of stuff i made <br><br><br><br><br><br>scroll down</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+          </svg>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="album">
+  <div class="container">
+    
+    <div class="container py-5 text-center">
+      <button type="button" class="btn active" id="toggleDarkMode">Toggle Dark Mode (try this stuff)</button>
+  </div>
+  </div>
+
+    <div class="container text-center">
+        <h1 class="atitle">Web Projects</h1>
+        <div class="row">
+            <div class="col album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 21rem; ">
+                    <div class="card-header">Mondarian</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269671294992125982/image.png?ex=66b0e90a&is=66af978a&hm=d345db90bb797579dc386c3967371940c2ba9900b38cfdae65c7216b26b4da5f&=&format=webp&quality=lossless&width=673&height=676" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">Made only using css grid</p>
+                      <a href="/webcourse/1mondarian/index.html"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 21rem;">
+                    <div class="card-header">Move It</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269675467900981290/image.png?ex=66b0ecec&is=66af9b6c&hm=d2f9d9a82fa2a96768f605dc76b2ac68ef43446565189c9084204e3320175670&=&format=webp&quality=lossless&width=1333&height=676" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">Made with using bootstrap</p>
+                      <a href="/webcourse/2moveit/index.html"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 21rem;">
+                    <div class="card-header">Tindog</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269675717512400906/image.png?ex=66b0ed28&is=66af9ba8&hm=8d2e305a5d953cd5588e6e12001ac17287e2bb2f6bc68e48385bc919a7630c2e&=&format=webp&quality=lossless&width=550&height=273" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">Made with using bootstrap</p>
+                      <a href="/webcourse/3tindog/index.html"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <h1 class="atitle">Excel Projects & Assignment</h1>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 21rem;">
+                    <div class="card-header">Payroll System</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269685668985180190/image.png?ex=66b0f66d&is=66afa4ed&hm=aa703ed37d401806240aeaa6bcf15f54ef6baa939238c5f6c198e5bf6de3aace&=&format=webp&quality=lossless&width=1440&height=611" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">This Project Record and Calculate Employee Pay Every Week and Add their Overtime Bonus</p>
+                      <a href="https://docs.google.com/spreadsheets/d/1ElUIxEaEhodLfVX1vzfX5NzlLvya2W7z/edit?usp=sharing&ouid=112886321217525569497&rtpof=true&sd=true"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 21rem;">
+                    <div class="card-header">Grade Book</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269685930202234991/image.png?ex=66b0f6ab&is=66afa52b&hm=d60c0ebef1a294ef47e11772d8365b166be81807653d9e65cdf8b507ad7f7f5c&=&format=webp&quality=lossless&width=1440&height=611" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">This Project is created for Safety Grade Test if person pass or fail the safety standard and look for failed employee to fire</p>
+                      <a href="https://docs.google.com/spreadsheets/d/1Xa2byW3de-2vfw03EguTBVwvOglWGuZF/edit?usp=sharing&ouid=112886321217525569497&rtpof=true&sd=true"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 21rem;">
+                    <div class="card-header">Decision Priority Calculator</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269686197060370432/image.png?ex=66b0f6eb&is=66afa56b&hm=0c10f99b0146e1fefb15c7b2687a621170fc3b823680c56fddb69dd463a72fad&=&format=webp&quality=lossless&width=1440&height=617" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">This project is created for decision priority calculator i rate my decision into 1-5 and multiply it to priority base on job market,pay,enjoyment,etc</p>
+                      <a href="https://docs.google.com/spreadsheets/d/1FvKeHJklJCWzjCfW6Ez9INZXnSgFwL_W/edit?usp=sharing&ouid=112886321217525569497&rtpof=true&sd=true"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 21rem; ">
+                    <div class="card-header">Sales Database</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269686405630656582/image.png?ex=66b0f71c&is=66afa59c&hm=7cdd1eeffcc057ae402bd434836ed524beacbbe8a74ac6bdba104dedede24000&=&format=webp&quality=lossless&width=1440&height=613" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">This project focuses on text to columns, if, sumif, sort, filter, pivot tables, pie chart</p>
+                      <a href="https://docs.google.com/spreadsheets/d/15r59BdIEqGGzS5yvkQeIW3r2Q7-RYKSe/edit?usp=sharing&ouid=112886321217525569497&rtpof=true&sd=true"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 album">
+                <div class="card rounded-3 shadow-lg border border-primary-subtle border-3 h-100" style="width: 20rem; ">
+                    <div class="card-header">Car Inventory (Assignment)</div>
+                    <img src="https://media.discordapp.net/attachments/980410355425624104/1269686646954262659/image.png?ex=66b0f756&is=66afa5d6&hm=bb1751693d052b2cea408ac58dd7e0ad05fea78c6dcdc5a1c30774b8acb0899e&=&format=webp&quality=lossless&width=1440&height=613" class="card-img-top" alt="mondarian">
+                    <div class="card-body">
+                      <p class="card-text">They have given me a bad sort of data on notepad i have to Put it on Excel and base on Car ID i have to look for their Brand/Model/Year/Etc. This Assignment focuses on using vlookup and left/mid/right code</p>
+                      <a href="https://docs.google.com/spreadsheets/d/1_eE3DAF2bndvkFrXwiiROF8xhzg9OzyN/edit?usp=sharing&ouid=112886321217525569497&rtpof=true&sd=true"><button type="button" class="btn btn-outline-primary">Click For Full View</button></a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<div class="footer">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mb-0 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-body-secondary">Thank you for taking time looking at these <3 </span>
+    </div>
+
+  </footer>
+</div>
+
+<script>
+        const toggleButton = document.getElementById('toggleDarkMode');
+
+toggleButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
